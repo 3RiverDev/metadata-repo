@@ -23,7 +23,7 @@
     <xsd:attribute name="uuid" type="xsd:string" use="required" />
   </xsd:complexType>
 
-  <xsd:complexType name="documentEntry">
+  <xsd:complexType name="fileEntry">
     <xsd:complexContent>
       <xsd:extension base="baseEntry">
         <xsd:sequence>
