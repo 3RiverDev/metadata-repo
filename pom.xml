@@ -12,9 +12,11 @@
   <modules>
     <module>metadata-repo-model</module>
     <module>metadata-repo-db</module>
+    <module>metadata-repo-common</module>
   </modules>
 
   <properties>
-    <version.org.hibernate>5.1.0.Final</version.org.hibernate>
+    <version.hibernate>5.1.0.Final</version.hibernate>
+    <version.hikaricp>2.4.6</version.hikaricp>
   </properties>
 </project>

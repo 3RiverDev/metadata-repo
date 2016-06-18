@@ -30,6 +30,7 @@
           <xsd:element name="contentType" type="xsd:string" />
           <xsd:element name="contentSize" type="xsd:long" />
           <xsd:element name="contentHash" type="xsd:string" />
+          <xsd:element name="contentLocation" type="xsd:string" />
         </xsd:sequence>
       </xsd:extension>
     </xsd:complexContent>

@@ -16,6 +16,8 @@ public class FileEntryEntity extends BaseEntryEntity {
     @Lob
     private String contentHash;
 
+    private String contentLocation;
+
     public String getContentType() {
         return contentType;
     }
@@ -38,5 +40,13 @@ public class FileEntryEntity extends BaseEntryEntity {
 
     public void setContentHash(String contentHash) {
         this.contentHash = contentHash;
+    }
+
+    public String getContentLocation() {
+        return contentLocation;
+    }
+
+    public void setContentLocation(String contentLocation) {
+        this.contentLocation = contentLocation;
     }
 }
