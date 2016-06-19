@@ -17,6 +17,15 @@
   </modules>
 
   <properties>
-
+    <version.commons-io>2.5</version.commons-io>
+    <version.org.neo4j>3.0.3</version.org.neo4j>
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.threeriverdev.metadata-repo</groupId>
+      <artifactId>metadata-repo-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
 </project>

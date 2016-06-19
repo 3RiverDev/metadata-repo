@@ -13,4 +13,9 @@
   <artifactId>metadata-repo-artifacts</artifactId>
   <packaging>pom</packaging>
 
+  <modules>
+    <module>text</module>
+    <module>localfile</module>
+  </modules>
+
 </project>
