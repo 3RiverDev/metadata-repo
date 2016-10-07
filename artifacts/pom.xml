@@ -18,4 +18,12 @@
     <module>localfile</module>
   </modules>
 
+  <dependencies>
+    <dependency>
+      <groupId>org.threeriverdev.metadata-repo</groupId>
+      <artifactId>metadata-repo-api</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+  </dependencies>
+
 </project>

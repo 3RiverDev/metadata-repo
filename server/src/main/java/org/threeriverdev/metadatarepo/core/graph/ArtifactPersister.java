@@ -11,14 +11,9 @@ import org.threeriverdev.metadatarepo.core.model.Artifact;
  */
 public class ArtifactPersister {
 
-    private final ArtifactRegistry artifactRegistry;
+    private ArtifactRegistry artifactRegistry;
 
-    private final ArtifactGraph artifactGraph;
-
-    public ArtifactPersister(ArtifactRegistry artifactRegistry, ArtifactGraph artifactGraph) {
-        this.artifactRegistry = artifactRegistry;
-        this.artifactGraph = artifactGraph;
-    }
+    private ArtifactGraph artifactGraph;
 
     public void persist(Artifact artifact) {
         ArtifactProvider artifactProvider = artifactRegistry.getArtifactProvider(artifact.getType());
@@ -46,5 +41,21 @@ public class ArtifactPersister {
         } finally {
             tx.close();
         }
+    }
+
+    public ArtifactRegistry getArtifactRegistry() {
+        return artifactRegistry;
+    }
+
+    public void setArtifactRegistry(ArtifactRegistry artifactRegistry) {
+        this.artifactRegistry = artifactRegistry;
+    }
+
+    public ArtifactGraph getArtifactGraph() {
+        return artifactGraph;
+    }
+
+    public void setArtifactGraph(ArtifactGraph artifactGraph) {
+        this.artifactGraph = artifactGraph;
     }
 }
